@@ -1,0 +1,344 @@
+.toggleButton {
+  background: #1CB5E0;
+}
+
+.light:after {
+  background: red !important;
+}
+
+.toggledGreen:after {
+  background-color: #8bcc6d !important;
+}
+
+.toggledRed:after {
+  background-color: #d84545 !important;
+}
+
+.toggledBlue:after {
+  background-color: #81d3ea !important;
+}
+
+.toggledYellow:after {
+  background-color: #fbea97 !important;
+}
+
+.wrong:after {
+  background-color: none !important;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(red, black);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(red, black);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(red, black);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#ff0000, #000000);
+  /* Standard syntax */
+}
+
+.go:after {
+  background-color: #ffffff !important;
+}
+
+main .row {
+  background: #3d72b4;
+  background: -webkit-linear-gradient(#525252, #3d72b4);
+  background: -o-linear-gradient(#525252, #3d72b4);
+  background: -moz-linear-gradient(#525252, #3d72b4);
+  background: linear-gradient(#525252, #3d72b4);
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-align: center;
+  font-family: Montserrat;
+}
+
+.simon {
+  margin: 0px auto;
+  width: 320px;
+  height: 320px;
+  background-color: #414345;
+  border-radius: 100%;
+  box-shadow: 1px 1px 10px black;
+}
+@media (min-width: 768px) {
+  .simon {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.buttons {
+  height: 160px;
+  float: left;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .buttons {
+    height: 250px;
+  }
+}
+.buttons:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+#green:after {
+  background-color: #377c17;
+  border-radius: 100% 0 0 0;
+  top: 20px;
+  left: 20px;
+  right: 10px;
+  bottom: 10px;
+}
+
+#red:after {
+  background-color: #8d0606;
+  border-radius: 0 100% 0 0;
+  top: 20px;
+  left: 10px;
+  right: 20px;
+  bottom: 10px;
+}
+
+#yellow:after {
+  background-color: #dbb609;
+  border-radius: 0 0 0 100%;
+  top: 10px;
+  left: 20px;
+  right: 10px;
+  bottom: 20px;
+}
+
+#blue:after {
+  background-color: #0d259c;
+  border-radius: 0 0 100% 0;
+  top: 10px;
+  left: 10px;
+  right: 20px;
+  bottom: 20px;
+}
+
+#UI {
+  width: 55%;
+  height: 55%;
+  margin-top: 22.5%;
+  margin-left: 22.5%;
+  border-radius: 100%;
+  float: left;
+  position: absolute;
+  z-index: 15;
+  background: #414345;
+  padding: 30px;
+}
+#UI:after {
+  background: white;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 100%;
+  top: 12.5px;
+  left: 12.5px;
+  right: 12.5px;
+  bottom: 12.5px;
+}
+
+.power, .brand, .options {
+  height: 33.33%;
+}
+
+.brand {
+  margin-top: -3px;
+  margin-bottom: 13px;
+}
+@media (min-width: 768px) {
+  .brand {
+    margin-top: 5px;
+    margin-bottom: 12.5px;
+  }
+}
+.brand h1 {
+  font-size: 30px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .brand h1 {
+    font-size: 50px;
+    padding-top: 15px;
+  }
+}
+.brand h1 span {
+  font-size: 12px;
+  top: -12px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .brand h1 span {
+    font-size: 20px;
+    top: -18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .options p {
+    font-size: 12px;
+  }
+}
+.options .col-xs-4 {
+  height: 90%;
+}
+.options .col-xs-4 .col-xs-12 {
+  height: 50%;
+}
+.options .col-xs-4:first-child .col-xs-12:first-child p {
+  background: #400505;
+  color: red;
+  padding: 2px;
+  border-radius: 2px;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .options .col-xs-4:first-child .col-xs-12:first-child p {
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 8px;
+  }
+}
+.options .col-xs-4:nth-child(2) .col-xs-12:first-child {
+  background: #414345;
+  border-radius: 100%;
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .options .col-xs-4:nth-child(2) .col-xs-12:first-child {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+  }
+}
+.options .col-xs-4:nth-child(2) .col-xs-12:first-child:after {
+  background: red;
+  content: '';
+  position: absolute;
+  z-index: 50;
+  border-radius: 100%;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+}
+.options .col-xs-4:last-child .col-xs-12:first-child {
+  position: absolute;
+  background: #414345;
+  border-radius: 100%;
+  width: 20%;
+  height: 20%;
+  margin-left: 40%;
+  margin-top: -10px;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .options .col-xs-4:last-child .col-xs-12:first-child {
+    width: 12.5%;
+    height: 12.5%;
+    margin-left: 43.75%;
+  }
+}
+.options .col-xs-4:last-child .col-xs-12:first-child:after {
+  background: none;
+  content: '';
+  position: absolute;
+  z-index: 50;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+.options .col-xs-4:last-child .col-xs-12:nth-child(2) {
+  background: #414345;
+  border-radius: 100%;
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .options .col-xs-4:last-child .col-xs-12:nth-child(2) {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+  }
+}
+.options .col-xs-4:last-child .col-xs-12:nth-child(2):after {
+  background: yellow;
+  content: '';
+  position: absolute;
+  z-index: 50;
+  border-radius: 100%;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+}
+
+.power {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .power {
+    margin-top: 0px;
+  }
+}
+.power .col-xs-4 p {
+  padding-top: 2px;
+}
+@media (min-width: 768px) {
+  .power .col-xs-4 p {
+    font-size: 15px;
+  }
+}
+.power .col-xs-4:first-child p {
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .power .col-xs-4:first-child p {
+    padding-left: 35px;
+  }
+}
+.power .col-xs-4:last-child p {
+  padding-right: 18px;
+}
+@media (min-width: 768px) {
+  .power .col-xs-4:last-child p {
+    padding-right: 38px;
+  }
+}
+.power .toggle {
+  height: 50%;
+  background: black;
+  border-radius: 3px;
+  padding: 3px 4px;
+}
+@media (min-width: 768px) {
+  .power .toggle {
+    height: 40%;
+  }
+}
+.power .toggle .col-xs-6 {
+  height: 100%;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+  padding: 0;
+}
